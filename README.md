@@ -1,2 +1,2 @@
 # Angular_Gijon
-Curso Angular Indra Gijón
+Curso Angular Indra - Gijón
