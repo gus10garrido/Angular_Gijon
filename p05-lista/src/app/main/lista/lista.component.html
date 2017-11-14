@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+      <div class="card">
+        <div class="card-header">
+          Lista de Tareas
+        </div>
+        <div class="card-body">
+
+          <div class="form-group">
+            <label for="tarea"></label>
+            <input type="text"
+              class="form-control" name="tarea" id="tarea" 
+              placeholder="Escribe una tarea"
+              [(ngModel)]="sTarea">
+            <button (click)="addTarea()">Añadir</button>
+          </div>
+
+        </div>
+        <div class="card-footer text-muted">
+          <ul>
+            <li *ngFor="let tarea of aTareas">{{tarea}}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
