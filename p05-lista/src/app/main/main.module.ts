@@ -5,13 +5,14 @@ import { ListaComponent } from './lista/lista.component';
 import { FormsModule } from '@angular/forms';
 import { ListaV4Component } from './lista-v4/lista-v4.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule
   ],
-  declarations: [MainComponent, ListaComponent, ListaV4Component, CalculadoraComponent],
+  declarations: [MainComponent, ListaComponent, ListaV4Component, CalculadoraComponent, PipesComponent],
   exports: [MainComponent]
 })
 export class MainModule { }
