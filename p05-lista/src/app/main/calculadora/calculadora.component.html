@@ -1,0 +1,25 @@
+<div class="container mb-2">
+  <div class="row">
+    <div class="col">
+      
+        <div class="card">
+          <div class="card-header">
+            Ejemplo Calculadora
+          </div>
+          <div class="card-body">
+              <label for="numero">Introdce un número:</label>
+              <input type="text"
+                class="form-control" name="numero" id="numero" 
+                placeholder="Introdce un número"
+                [(ngModel)]="nNumero">
+              <button (click)="sumaUno()">Aumentar</button>
+              <button (click)="restaUno()">Disminuir</button>
+          </div>
+          <div class="card-footer text-muted">
+              El total es <span [ngClass]="oColores">{{nNumero}}</span>
+          </div>
+        </div>
+
+    </div>    
+  </div>
+</div>
