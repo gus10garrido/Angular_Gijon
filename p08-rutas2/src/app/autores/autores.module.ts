@@ -1,0 +1,12 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AutoresComponent } from './autores.component';
+
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  declarations: [AutoresComponent],
+  exports: [AutoresComponent]
+})
+export class AutoresModule { }
