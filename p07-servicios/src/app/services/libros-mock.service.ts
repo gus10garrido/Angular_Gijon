@@ -17,4 +17,16 @@ export class LibrosMockService {
     return this.aLibros;
   }
 
+  buscarLibrosAsync(clave: string) {
+    return new Promise(
+      (resolve, reject) => {
+        setTimeout(
+          () => { resolve(JSON.stringify(this.aLibros)); }
+          ,
+          2000
+        );
+      }
+    );
+  }
+
 }
